@@ -1,0 +1,126 @@
+/* 1: CSS RESET - Line 7 */
+/* 2: GENERAL STYLES - Line 15 */
+/* 3: TOP-NAVIGATION - Line 39 */
+/* 4: MAPA - Line 59 */
+/* 5: FOOTER - Line 67 */
+
+/* 1: CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: 'Ubuntu', Arial, 'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
+}
+/* 2: START GENERAL */
+:root {
+    --greyTheme:#cecece;
+    --topBackground: #272727;
+    --generalBackground: #25221A;
+    --trueWhite: #ffffff;
+    --greySecondary: #aaaaaa;
+}
+
+.linkNoUnderline {
+	text-decoration: none;
+	color: var(--greyTheme);
+}
+
+.linkNoUnderline:hover {
+	text-decoration: none;
+	color: var(--greyTheme);
+	font-size: 1.1rem;
+}
+
+#principal {
+    background-color: var(--greyTheme);
+}
+/* END GENERAL */
+/* 3: START TOP-NAVIGATION */
+.top-navigation {
+	background-color: var(--topBackground);
+	color: var(--greyTheme);
+	line-height: 200%;
+	height: 35px;
+}
+
+.top-navigation a {
+	color: var(--greyTheme);
+}
+
+.top-navigation a:hover {
+	color: var(--trueWhite);
+}
+
+.fa-code {
+    padding-top: 0.65rem;
+}
+/* END TOP-NAVIGATION */
+/* 4: START MAPA */
+#map {
+    border-radius: 10px;
+    border: 1px solid black;
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+    min-height: calc(100vh - 300px);
+}
+
+@media (max-width: 720px)
+{
+  #map {
+    min-height: calc(100vh - 400px);
+  }
+}
+/* END MAPA */
+/* 5: START RODAPE */
+.rodape {
+	background-color: var(--generalBackground);
+}
+
+.rodape h3 {
+	color: var(--trueWhite);
+	font-size: 1.4rem;
+}
+
+.rodape hr {
+	border-color: var(--trueWhite);
+}
+
+.icone {
+	background-color: rgba(39,64,139,0.5);
+}
+
+.rodape hr {
+	border: 1px solid rgba(39,64,139,0.9);
+}
+
+.rodape p {
+	color: white;
+	font-size: 1rem;
+}
+
+.btnTop {
+	color: var(--greySecondary);
+	background-color: transparent;
+}
+
+.btnTop:hover {
+	color: var(--trueWhite);
+}
+
+.btnTop:focus,
+.btnMenu:focus {
+	box-shadow: none;
+}
+
+.linkSocial {
+	color: var(--trueWhite);
+	text-decoration: underline;
+	font-size: 1rem;
+}
+
+.linkSocial:hover {
+	color: var(--trueWhite);
+	text-decoration: none;
+	font-size: 1rem;
+}
+/* END RODAPE */
